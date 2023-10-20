@@ -9,3 +9,6 @@
 
 1 режим ЧЕЛОВЕК - ЧЕЛОВЕК
 2 режим ЧЕЛОВЕК - КОМПЬЮТЕР (HARD режим)
+
+# [2) HomeWork_Enum](https://github.com/Vinnik81/Java/tree/master/HomeWork_Enum)
+Написать продвинутый функционал с помощью Enum.
