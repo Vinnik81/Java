@@ -156,12 +156,12 @@ class Battle implements Gaming {
             user.setAttackType(AttackType.DAMAGE);
         }
 
-        if (user.isAlive() && user.getAttackType() == AttackType.SUPERATTACK) {
+        if (user.getHp() > 300 && user.isAlive() && user.getAttackType() == AttackType.SUPERATTACK) {
             user.setAttackType(AttackType.SUPERATTACK);
 
         }
 
-        if (user.isAlive() && user.getAttackType() == AttackType.SUPPERHEAL) {
+        if (user.getHp() < 10 && user.isAlive() && user.getAttackType() == AttackType.SUPPERHEAL) {
             user.setAttackType(AttackType.SUPPERHEAL);
         }
 
