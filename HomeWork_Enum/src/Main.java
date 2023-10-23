@@ -175,7 +175,7 @@ Warrior warrior = new Warrior("Abroxas", 300);
 Warrior warrior2 = new Warrior("Zorg", 300);
 Warrior warrior3 = new Warrior("Zena", 250);
 Warrior warrior4 = new Warrior("Velma", 250);
-Warrior warrior5 = new Warrior("Titan", 1000);
+Warrior warrior5 = new Warrior("Titan", 300);
 
 Battle battle = new Battle();
 battle.addAttack(warrior);
