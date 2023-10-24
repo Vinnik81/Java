@@ -23,6 +23,7 @@ public class Main {
 //        Map<String, String> dictionary = new TreeMap<>(); // car - masina
 //        Map<String, Map<String, String>> dictionary = new TreeMap<>(); // en car - masina
 //        Map<String, Map<String, List<String>>> dictionary = new TreeMap<>(); // en car - masina, автомобиль - машина
+//        Map<String, Map<String,Map<String,List<String>>>> dictionary  = new TreeMap<>(); // en ru  car -> masina , автомобиль ,
 
 //        Queue<String> queues = new ArrayDeque<>();
        /* Deque<String> queues = new ArrayDeque<>();
