@@ -34,3 +34,15 @@ class Dictionary{
 }
 3a Пример со структурой  Map<String, Map<String,List<String>>> dictionary  = new TreeMap<>();
 3b Пример со структурой  Map<String, Words> dictionary  = new TreeMap<>();
+
+# [4) HomeWork_File_Thread](https://github.com/Vinnik81/Java/tree/master/HomeWork_File_Thread)
+Написать метод который создает по 20 папок а внутри по 20 файлов и внутри каждого файла нумерация от 1 - 1.000.000
+Использовать потоки
+
+В main
+старт времени
+вызов метода
+стоп времени
+
+Время работы программы без использования Thread: 119179 миллисекунд.
+Время работы программы с использованием Thread: 109404 миллисекунд.
