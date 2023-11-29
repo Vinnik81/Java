@@ -1,16 +1,22 @@
 package com.example.spring.controllers;
 
 import com.example.spring.models.Person;
+import com.example.spring.repository.BranchesRepository;
 import com.example.spring.utils.CommonUtil;
+import com.example.spring.utils.RestUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import javax.validation.Valid;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 
 @RestController
@@ -21,12 +27,19 @@ public class HomeController {
 
     List<String> arr = new ArrayList<>();
 
+    @Autowired
+    BranchesRepository branchesRepository;
+
+   /* @Autowired
+    private RestTemplate restTemplate;*/
+
     public HomeController() {
         arr.add("One");
         arr.add("Two");
         arr.add("Three");
         arr.add("Four");
         arr.add("Five");
+
     }
 
     //RequestParam - запрос с параметром
@@ -49,7 +62,7 @@ return arr.get(index);
         return true;
     }*/
 
-    @PostMapping("/test")
+    /*@PostMapping("/test")
     public Person test(HttpServletRequest request, @Valid @RequestBody Person person) {
         logger.info("Good request " + " " + CommonUtil.getIp(request));
         try {
@@ -59,5 +72,14 @@ return arr.get(index);
         }
         System.out.println(person);
         return person;
-    }
+    }*/
+
+    /*@Autowired
+    private RestUtil restUtil;
+
+    @GetMapping("/test/{title}")
+    public Map test(HttpServletRequest request, @PathVariable String title) {
+        logger.info("Good request " + " " + CommonUtil.getIp(request));
+       return restUtil.getMovieByName(title);
+    }*/
 }
