@@ -67,3 +67,6 @@ class Dictionary{
 
 В конфигурациях Spring настроить 3-4 автомобиля.
 В main функции из context получить пару этих автомобилей.
+
+# [7) HomeWorkSpring_HibernateDb](https://github.com/Vinnik81/Java/tree/master/HomeWorkSpring_HibernateDb)
+Написать приложение на спринг, подключить базу данных, реализовать Crud операции.
