@@ -4,12 +4,22 @@
     <title th:text="${title}"></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
 <header th:insert="blocks/header :: header"></header>
 
 <div class="container mt-5">
     <h1 th:text="${title}"></h1>
+    <img src="/images/pngegg%20(1).png" alt="изображения не загрузились">
+    <p>Компьютерная Академия "TOP"</p>
+    <p>Разработал студент:</p>
+    <h2>Винник Владимир</h2>
 </div>
 
 <div th:insert="blocks/footer :: footer"></div>
